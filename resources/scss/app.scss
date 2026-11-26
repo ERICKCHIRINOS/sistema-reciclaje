@@ -1,25 +1,16 @@
-// 1. Sobrescribir variables de Bootstrap antes de importar
-$primary: #1B5E3A;    // 30% - Estructura y jerarquía
-$secondary: #52665B;  // Secundario / texto muted
-$success: #16A34A;    // 10% - Acento principal
-$warning: #D97706;    // Acento para estados pendientes/avisos
-$body-bg: #F4F7F5;     // 60% - Fondo general
+$body-bg: #F4F7F5;
 $body-color: #1E2923;
+$primary: #1B5E3A;
+$success: #16A34A;
+$warning: #D97706;
 
-// 2. Importar Bootstrap
+$card-bg: #FFFFFF;
+$border-color: #DCE5DF;
+$border-radius: 0.65rem;
+
 @import "bootstrap/scss/bootstrap";
 
-// 3. Variables y estilos base propios
-:root {
-  --brand-primary: #1B5E3A;
-  --brand-accent: #16A34A;
-  --brand-warning: #D97706;
-  --surface-bg: #F4F7F5;
-  --surface-card: #FFFFFF;
-}
-
-.card {
-  background-color: var(--surface-card);
-  border: 0;
-  border-radius: 0.75rem;
+body {
+    background-color: $body-bg;
+    color: $body-color;
 }
